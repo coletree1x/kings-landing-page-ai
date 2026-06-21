@@ -49,7 +49,7 @@
       pointer-events: none;
       z-index: 0;
     }
-
+ 
     /* ── LOGO ── */
     .logo-section {
       position: relative;
@@ -120,7 +120,7 @@
       text-align: center;
       line-height: 1;
     }
-
+ 
     /* ── LIVE BADGE ── */
     .live-badge {
       position: relative;
@@ -149,7 +149,7 @@
       0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(46,204,113,0.5); }
       50%       { opacity: 0.7; box-shadow: 0 0 0 5px rgba(46,204,113,0); }
     }
-
+ 
     /* ── SUB LINE ── */
     .sub-line {
       position: relative;
@@ -162,7 +162,7 @@
       margin-bottom: 6px;
     }
     .sub-line strong { color: var(--gold); font-weight: 700; }
-
+ 
     /* ── STATS ROW ── */
     .stats-row {
       position: relative;
@@ -199,7 +199,7 @@
       text-transform: uppercase;
       color: var(--muted);
     }
-
+ 
     /* ── CTA BUTTON ── */
     .cta-btn {
       position: relative;
@@ -228,7 +228,7 @@
       transform: translateY(-2px);
       box-shadow: 0 8px 32px rgba(245,197,24,0.42);
     }
-
+ 
     /* ── CALLOUT BOX ── */
     .callout {
       position: relative;
@@ -255,7 +255,7 @@
       color: var(--muted);
       line-height: 1.7;
     }
-
+ 
     /* ── COUNTDOWN ── */
     .countdown-wrap {
       position: relative;
@@ -323,7 +323,7 @@
       margin-top: 7px;
     }
     .countdown-sub strong { color: #fff; }
-
+ 
     /* ── BOTTOM CTA ── */
     .bottom-cta {
       position: relative;
@@ -343,7 +343,7 @@
       letter-spacing: 0.04em;
     }
     .bottom-note strong { color: var(--gold); }
-
+ 
     footer {
       position: relative;
       z-index: 2;
@@ -358,7 +358,7 @@
 </head>
 <body>
 <div class="page">
-
+ 
   <!-- LOGO -->
   <div class="logo-section">
     <div class="logo-ring">
@@ -366,13 +366,13 @@
     </div>
     <div class="brand-name">D KING'S TRADERS</div>
   </div>
-
+ 
   <!-- LIVE BADGE -->
   <div class="live-badge">
     <div class="live-dot"></div>
     Bot Signals Active
   </div>
-
+ 
   <!-- COUNTDOWN (replaces headline) -->
   <div class="countdown-wrap">
     <div class="countdown-label">⏳ Free Access Closes In</div>
@@ -394,10 +394,10 @@
     </div>
     <div class="countdown-sub"><strong>Spots are limited.</strong> Join before the timer hits zero.</div>
   </div>
-
+ 
   <!-- SUB LINE -->
   <p class="sub-line">🔥 <strong>500+ traders</strong> already making money · AI signals + full automation</p>
-
+ 
   <!-- STATS -->
   <div class="stats-row">
     <div class="stat">
@@ -413,7 +413,7 @@
       <div class="stat-label">To Join</div>
     </div>
   </div>
-
+ 
   <!-- PRIMARY CTA -->
   <a href="https://chat.whatsapp.com/KSybgKLNxG261yzDLt6kcO" class="cta-btn">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -422,13 +422,13 @@
     </svg>
     JOIN ON WHATSAPP — GET $50 FREE
   </a>
-
+ 
   <!-- CALLOUT BOX -->
   <div class="callout">
     <div class="callout-headline">YOUR NEXT WIN<br>STARTS IN MINUTES 🚀</div>
     <div class="callout-body">This AI bot is already placing high-probability trades for beginners and experienced traders — hands-free, around the clock.</div>
   </div>
-
+ 
   <!-- BOTTOM CTA -->
   <div class="bottom-cta">
     <a href="https://chat.whatsapp.com/KSybgKLNxG261yzDLt6kcO" class="cta-btn">
@@ -440,13 +440,13 @@
     </a>
     <p class="bottom-note">DM us on WhatsApp · <strong>Limited spots open</strong></p>
   </div>
-
+ 
   <footer>
     © 2026 D King's Traders · Trading involves risk.<br>Past performance is not indicative of future results.
   </footer>
-
+ 
 </div>
-
+ 
 <script>
   // Countdown — resets to 24 hours each visit (session urgency)
   const DURATION = 24 * 60 * 60; // 24 hours in seconds
@@ -456,9 +456,9 @@
     endTime = Date.now() + DURATION * 1000;
     sessionStorage.setItem(key, endTime);
   }
-
+ 
   function pad(n) { return String(n).padStart(2, '0'); }
-
+ 
   function tick() {
     const diff = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
     const h = Math.floor(diff / 3600);
